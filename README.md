@@ -68,9 +68,9 @@
   𝑐𝑛𝑡=0.0557∗𝐴𝑢𝑔𝑢𝑠𝑡−0.247∗(𝐿𝑖𝑔ℎ𝑡𝑆𝑛𝑜𝑤)−0.0568∗𝑀𝑖𝑠𝑡+0.0385∗𝑂𝑐𝑡𝑜𝑏𝑒𝑟+0.125∗𝑆𝑒𝑝𝑡𝑒𝑚𝑏𝑒𝑟−0.0557∗𝐻𝑜𝑙𝑖𝑑𝑎𝑦−0.17∗ℎ𝑢𝑚+0.1049∗𝑠𝑢𝑚𝑚𝑒𝑟+0.53∗𝑡𝑒𝑚𝑝−0.185∗𝑤𝑖𝑛𝑑𝑠𝑝𝑒𝑒𝑑+0.135∗𝑤𝑖𝑛𝑡𝑒𝑟+0.0442∗𝑤𝑜𝑟𝑘𝑖𝑛𝑔𝑑𝑎𝑦+0.229∗𝑦𝑟
 
 - Features having positive coefficients
-    - August,October,September,Sunday,Summer,temp,winter,working day, year
+	- August,October,September,Sunday,Summer,temp,winter,working day, year
 - Features having negative coefficients
-- Light snow, Mist, holiday,hu, windspeed
+	- Light snow, Mist, holiday,hu, windspeed
 
 
 ## Technologies Used
