@@ -11,7 +11,7 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## Problem Statement
-- A US bike-sharing provider BoomBikes has recently suffered considerable dips in their revenues due to the ongoing Corona pandemic. The company is finding it very difficult to sustain in the current market scenario. So, it has decided to come up with a mindful business plan to be able to accelerate its revenue as soon as the ongoing lockdown comes to an end, and the economy restores to a healthy state. 
+- A US bike-sharing provider BoomBikes has recently suffered considerable dips in their revenues due to the ongoing Corona pandemic. The company is finding it very difficult to sustain in the current market scenario. So, it has decided to come up with a mindful business plan to be able to accelerate its revenue as soon as the ongoing lockdown comes to an end, and 		the economy restores to a healthy state. 
 - Based on various meteorological surveys and people's styles, the service provider firm has gathered a large dataset on daily bike demands across the American market based on some factors. The company wants to know:
 
   - Which variables are significant in predicting the demand for shared bikes.
@@ -42,19 +42,19 @@
 - It contains 730 rows and 16 columns
 
 ## Data Cleaning and preparation
-- No header, footers, summary or Total rows found.
-- No duplicates rows found.
 - No Null values found.
 - Keeping cnt column and removing registered and casual columns as they are directly related
 - Dummy variables are created for season, month, weekday and weather
 - Data is split with train size of 0.7
 - 'cnt','hum','temp','windspeed' are normalized using MinMaxScaler
-- OLS regression model 
 
 ## Analysis
 - 2019 has seen an increase in total rentals.
 - 2018 has peak rental counts in May,June,July where as 2019 has seen spike in August, September,October
 - 2018 has almost same distribution of rental counts through out the week where as 2019 has seen little spike during Friday and Saturday
+- OLS regression model showed 21 columns with high values of VIF. Took RFE approach to eliminate columns with high values of multicollinearity
+- Columns dropped for multicollinearity - 'April', 'December', 'February', 'Friday', 'Heavy rain', 'July', 'June','March', 'May', 'November', 'Saturday', 'Thursday', 'Tuesday','Wednesday'
+- RSquare score after RFE - 0.8475442609382655
   
 ## Conclusions
 - Test set RSquare shows that the model is generalized enough even with high train RSquare and F-Statistic
